@@ -1,0 +1,18 @@
+// countdown timer
+
+var count = 10;
+
+function text(){
+    console.log("Go!!");
+}
+
+function countDown() {
+    console.log(count);
+    count--;
+    if(count == 0){
+        setTimeout(text,1000);
+        clearInterval(id);
+    }
+}
+
+var id = setInterval(countDown,1000);
